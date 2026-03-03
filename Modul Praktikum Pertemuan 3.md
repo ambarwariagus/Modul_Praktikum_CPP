@@ -23,15 +23,15 @@ Dalam komputasi paralel, memecah 10.000 data ke dalam 10.000 objek independen ja
 
 ## 1.1 Latihan Praktik: Dasar Pembuatan Class dan Object
 
-Latihan ini akan mendemonstrasikan bagaimana kita mendefinisikan sebuah cetak biru, lalu menciptakan beberapa wujud nyatanya secara independen.
+Latihan ini akan mendemonstrasikan bagaimana kita mendefinisikan sebuah cetak biru, lalu membuat beberapa wujud nyatanya secara independen.
 
 ```cpp
 #include <iostream>
 #include <string>
 
-// Mendefinisikan Class (Cetak Biru)  
+// Mendefinisikan Class
 class Mobil {  
-public: // Sementara menggunakan public agar mudah diakses  
+public: // Sementara menggunakan public agar mudah diakses
     std::string merk;  
     std::string warna;  
     int tahun;
@@ -55,7 +55,7 @@ int main() {
     mobil2.warna = "Hitam";  
     mobil2.tahun = 2020;
 
-    // Memanggil perilaku dari masing-masing object secara mandiri  
+    // Memanggil perilaku dari masing-masing object
     mobil1.nyalakanMesin();  
     mobil2.nyalakanMesin();
 
@@ -66,7 +66,7 @@ int main() {
 ### Penjelasan Kode
 
 - `class Mobil { ... };` mendefinisikan sebuah cetak biru. Ingat selalu bahwa deklarasi `class` diakhiri dengan tanda titik koma (`;`).  
-- `Mobil mobil1;` menciptakan objek fisik (mengalokasikan memori) yang dinamakan `mobil1` berdasarkan cetak biru `Mobil`.  
+- `Mobil mobil1;` membuat objek fisik (mengalokasikan memori) yang dinamakan `mobil1` berdasarkan cetak biru `Mobil`.  
 - Operator titik (`.`), seperti pada `mobil1.merk`, digunakan untuk mengakses atribut (variabel) atau method (fungsi) spesifik milik objek tersebut.
 
 ### Instruksi Eksplorasi
@@ -94,7 +94,7 @@ private:
     double posisi_x, posisi_y;
 
 public:  
-    // Pintu masuk resmi untuk mengubah posisi  
+    // Fungsi untuk mengubah posisi (update atribut private)
     void aturPosisi(double x, double y) {  
         posisi_x = x;  
         posisi_y = y;  
@@ -134,7 +134,7 @@ int main() {
 
 # 3. Constructor: Inisialisasi Otomatis
 
-*Constructor* adalah fungsi istimewa yang **otomatis berjalan di detik pertama** objek diciptakan. Tujuannya agar objek tidak pernah memiliki nilai *garbage* (sampah memori).
+*Constructor* adalah fungsi istimewa yang **otomatis berjalan di detik pertama** objek dibuat. Tujuannya agar objek tidak pernah memiliki nilai *garbage* (sampah memori).
 
 Syarat mutlak Constructor: Namanya harus persis sama dengan nama `Class`, dan ia tidak memiliki tipe kembalian (bahkan tidak memakai `void`).
 
@@ -179,7 +179,7 @@ int main() {
 
 # 4. Array of Objects
 
-Mensimulasikan penciptaan banyak entitas dan memprosesnya secara massal (*batch processing*).
+Mensimulasikan pebuatan banyak entitas dan memprosesnya secara massal (*batch processing*).
 
 ## 4.1 Latihan Praktik: Pemrosesan Sensor Massal
 
@@ -211,7 +211,7 @@ int main() {
     // Alokasi 3 objek Sensor ke dalam bentuk Array  
     Sensor jaringan[3] = { Sensor(101), Sensor(102), Sensor(103) };
 
-    // Batch processing: Komputasi massal yang siap diparalelkan  
+    // Batch processing
     for (int i = 0; i < 3; i++) {  
         // Simulasi input data yang berbeda untuk tiap sensor  
         jaringan[i].rekam((i + 1) * 12.5);  
@@ -235,7 +235,7 @@ int main() {
 
 1. Hapus nilai bawaan `nilai = 0.0;` pada `Constructor`, kemudian hapus (atau beri *comment*) pada loop `for` pertama yang bertugas merekam data, lalu jalankan program untuk melihat bahwa loop kedua akan mencetak angka acak, yang membuktikan fatalnya jika entitas simulasi tidak diinisialisasi secara benar.
 
-# 5. Suplemen: Pewarisan (Inheritance) & Hak Akses protected
+# 5. Pewarisan (Inheritance) & Hak Akses protected
 
 Pewarisan memungkinkan Class Baru (Anak) mengambil dan memperluas sifat Class Lama (Induk) untuk menghindari penulisan ulang kode. Di sinilah hak akses `protected` berperan: jika kita menggunakan `private`, Anak tidak akan bisa melihat atribut Induknya sendiri.
 
@@ -268,7 +268,7 @@ public:
     // Constructor Anak meneruskan data ke Constructor Induk  
     SensorSuhu(int id) : SensorDasar(id) {}
 
-    // Method khusus tambahan milik Anak  
+    // Method khusus milik Anak  
     void kalibrasiDanCetak() {  
         // Anak BISA memanggil nilai_bacaan secara langsung berkat 'protected'  
         double kalibrasi = nilai_bacaan + 1.5;   
