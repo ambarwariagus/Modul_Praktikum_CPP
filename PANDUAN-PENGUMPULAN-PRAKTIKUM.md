@@ -10,11 +10,11 @@ beserta bukti hasil eksekusinya.
 
 Buat repository di GitHub dengan format nama berikut:
 
-`NIM_NAMA_LENGKAP`
+```NIM_NAMA_LENGKAP```
 
 Contoh:
 
-`2310112345_Agus_Ambarwari`
+```2310112345_Agus_Ambarwari```
 
 Repository harus bersifat PUBLIC agar dapat diperiksa oleh dosen atau asisten praktikum.
 
