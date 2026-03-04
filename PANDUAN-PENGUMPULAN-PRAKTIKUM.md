@@ -1,6 +1,6 @@
 # Panduan Pengumpulan Hasil Praktikum
 
-Dokumen ini berisi panduan untuk pengumpulan hasil praktikum pemrograman melalui GitHub.
+Dokumen ini berisi panduan untuk pengumpulan hasil praktikum melalui GitHub.
 Setiap mahasiswa diwajibkan membuat repository pribadi dan mengunggah seluruh latihan praktikum
 beserta bukti hasil eksekusinya.
 
@@ -10,11 +10,11 @@ beserta bukti hasil eksekusinya.
 
 Buat repository di GitHub dengan format nama berikut:
 
-NIM_NAMA_LENGKAP
+`NIM_NAMA_LENGKAP`
 
 Contoh:
 
-2310112345_Agus_Ambarwari
+`2310112345_Agus_Ambarwari`
 
 Repository harus bersifat PUBLIC agar dapat diperiksa oleh dosen atau asisten praktikum.
 
@@ -24,17 +24,21 @@ Repository harus bersifat PUBLIC agar dapat diperiksa oleh dosen atau asisten pr
 
 Di dalam repository, buat file README.md yang berisi identitas mahasiswa sebagai berikut:
 
+`
 Nama        :
 NIM         :
 Program Studi :
 Fakultas    :
+`
 
 Contoh:
 
+`
 Nama        : Agus Ambarwari
 NIM         : 2310112345
 Program Studi : Ilmu Komputer
 Fakultas    : Fakultas Ilmu Komputer
+`
 
 ---
 
@@ -44,6 +48,7 @@ Setiap praktikum harus disimpan dalam direktori terpisah.
 
 Contoh struktur repository:
 
+`
 NIM_NAMA_LENGKAP
 │
 ├── README.md
@@ -59,6 +64,7 @@ NIM_NAMA_LENGKAP
 └── praktikum_3
     ├── latihan3.cpp
     ├── latihan3.png
+`
 
 ---
 
@@ -74,19 +80,21 @@ a. File Source Code
 
 Format penamaan file:
 
-<nama_latihan>.cpp
+`<nama_latihan>.cpp`
 
 Contoh:
 
-latihan_vector.cpp
+`latihan_vector.cpp`
 
 b. Screenshot Hasil Program
 
 Format penamaan file:
 
+`
 <nama_latihan>.png
 atau
 <nama_latihan>.jpg
+`
 
 Screenshot harus menampilkan hasil eksekusi program.
 
