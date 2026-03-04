@@ -24,21 +24,21 @@ Repository harus bersifat PUBLIC agar dapat diperiksa oleh dosen atau asisten pr
 
 Di dalam repository, buat file README.md yang berisi identitas mahasiswa sebagai berikut:
 
-`
+```
 Nama        :
 NIM         :
 Program Studi :
 Fakultas    :
-`
+```
 
 Contoh:
 
-`
+```
 Nama        : Agus Ambarwari
 NIM         : 2310112345
 Program Studi : Ilmu Komputer
 Fakultas    : Fakultas Ilmu Komputer
-`
+```
 
 ---
 
@@ -48,7 +48,7 @@ Setiap praktikum harus disimpan dalam direktori terpisah.
 
 Contoh struktur repository:
 
-`
+```
 NIM_NAMA_LENGKAP
 │
 ├── README.md
@@ -64,7 +64,7 @@ NIM_NAMA_LENGKAP
 └── praktikum_3
     ├── latihan3.cpp
     ├── latihan3.png
-`
+```
 
 ---
 
@@ -80,21 +80,21 @@ a. File Source Code
 
 Format penamaan file:
 
-`<nama_latihan>.cpp`
+```<nama_latihan>.cpp```
 
 Contoh:
 
-`latihan_vector.cpp`
+```latihan_vector.cpp```
 
 b. Screenshot Hasil Program
 
 Format penamaan file:
 
-`
+```
 <nama_latihan>.png
 atau
 <nama_latihan>.jpg
-`
+```
 
 Screenshot harus menampilkan hasil eksekusi program.
 
